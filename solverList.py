@@ -1,8 +1,6 @@
 import random
 
 
-
-
 def solverPuzzle(puzzle):
     for i in range(len(puzzle)):
         if isCelEmpty(puzzle[i]):
