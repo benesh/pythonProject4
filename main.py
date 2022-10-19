@@ -5,7 +5,7 @@
 from fileExercise import factoriel,approxEpsilone
 from solverList import *
 from SortFile import *
-
+from chifrage_automatisation import *
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi')  # Press Ctrl+F8 to toggle the breakpoint.
@@ -15,11 +15,13 @@ def print_hi(name):
     #puzzle = solverPuzzle(listNumber)
     #print(puzzle)
 
-    pathFrom = r"C:\Users\cobcouli\Downloads"
-    pathTo = r"C:\Users\cobcouli\coulibayFolder"
-    copyingFilebyYear(pathFrom,pathTo)
+#Copy main test
+    #pathFrom = r"C:\Users\cobcouli\Downloads"
+    #pathTo = r"C:\Users\cobcouli\coulibayFolder"
+    #copyingFilebyYear(pathFrom,pathTo)
     #filelist = listOfFile(pathFrom)
     #print(getMetaDataOfListFile(pathFrom,filelist))
+chiffrage()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
