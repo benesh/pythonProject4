@@ -14,19 +14,7 @@ def chiffrage():
     scenario = df.groupby('Scenario')
     scenarioSorted = scenario.nunique()
 
-    for scena, restscena in scenario:
-        print(scena)
-        print(nombre_de_row(restscena))
-        print("############################")
-        print(restscena)
-
-
-
-
-
-
-
-
+    """ Pour chaque cas donner le nombre d'étape """
 
 
 

@@ -6,6 +6,9 @@ from fileExercise import factoriel,approxEpsilone
 from solverList import *
 from SortFile import *
 from chifrage_automatisation import *
+from chiffrage_file_with_xlrd import *
+from NewChiffrageExo import *
+
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi')  # Press Ctrl+F8 to toggle the breakpoint.
@@ -21,11 +24,14 @@ def print_hi(name):
     #copyingFilebyYear(pathFrom,pathTo)
     #filelist = listOfFile(pathFrom)
     #print(getMetaDataOfListFile(pathFrom,filelist))
-chiffrage()
+    #chiffrage()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
+    #chiffrage_xlrd()
+    run()
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
