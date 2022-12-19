@@ -13,24 +13,37 @@ print(sheet)
 """delete the empty rows """
 
 """1) for each scenario get the number of case it have"""
-tabtuple=[]
-tabscenarioUnique=[]
+tabWithScenarioAndCas=[]
+tabWithNumscenario=[]
 for row in sheet:
-   if (row[2].value,row[3].value) not in tabtuple :
+   if (row[2].value,row[3].value) not in tabWithScenarioAndCas :
       temptuple = (row[2].value,row[3].value)
-      tabtuple.append(temptuple)
-   if row[2].value not in tabscenarioUnique :
-      tabscenarioUnique.append(row[2].value)
+      tabWithScenarioAndCas.append(temptuple)
+   if row[2].value not in tabWithNumscenario :
+      tabWithNumscenario.append(row[2].value)
 
-for tuple in tabtuple :
-   if tuple[0]:
-      pass
+tabWithScenarioAndCas.remove((None,None))
+tabWithScenarioAndCas.remove(('Scenario', 'Cas de test'))
+tabWithNumscenario.remove('Scenario')
+tabWithNumscenario.remove((None))
 
-print(tabtuple)
+sheetQuestion1 = book.create_sheet('Question_1')
+sheetQuestion1.append(['Nombre de cas de test associé pour chaque scénario'])
+sheetQuestion1.append(['Numéro de Scenario','Nombre de cas de test'])
+for row in sheet:
+   pass
 
 
-def countTupleIndex1(tab1tuple):
-   for item in tab1tuple:
-      pass
 
+
+
+print(tabWithScenarioAndCas)
+print (tabWithNumscenario)
+
+
+book.save('tempfile.xlsx')
+
+
+
+""" Réfléchir a une méthode pour écrire directement sur une feuille en meme temps de prendre l'info"""
 
